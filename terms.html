@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use - Voice Calculator</title>
+    <style>
+        :root {
+            --primary-color: #4F46E5;
+            --accent-color: #7C3AED;
+            --secondary-color: #111827;
+            --background-color: #F3F4F6;
+            --card-background: #FFFFFF;
+            --text-color: #1F2937;
+            --text-muted: #6B7280;
+            --border-color: rgba(128, 128, 128, 0.15);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-color: #7F77F1;
+                --accent-color: #A78BFA;
+                --secondary-color: #F3F4F6;
+                --background-color: #0F1115;
+                --card-background: #1C1E24;
+                --text-color: #F9FAFB;
+                --text-muted: #9CA3AF;
+                --border-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--card-background);
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .nav-links a:hover { color: var(--primary-color); }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background-color: var(--card-background);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .last-updated {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        p { margin-bottom: 15px; color: var(--text-color); }
+
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 6px;
+            color: var(--text-color);
+        }
+
+        a { color: var(--primary-color); text-decoration: none; }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .highlight-box {
+            background: rgba(79, 70, 229, 0.08);
+            border-left: 4px solid var(--primary-color);
+            padding: 1.25rem;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box p { margin-bottom: 0; }
+
+        footer {
+            background-color: var(--card-background);
+            padding: 40px 0;
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-color);
+            opacity: 0.7;
+        }
+
+        footer a { color: var(--primary-color); text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .card { padding: 24px; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Voice Calculator</a>
+                <div class="nav-links">
+                    <a href="index.html#features">Features</a>
+                    <a href="support.html">Support</a>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+
+        <div class="card">
+            <h1>Terms of Use</h1>
+            <div class="last-updated">Last Updated: February 26, 2026</div>
+
+            <p>These terms govern your use of the Voice Calculator iOS application developed by HarmonyAstroApps.</p>
+
+            <div class="highlight-box">
+                <p><strong>In short:</strong> Use Voice Calculator responsibly for your personal calculations. The app is provided as-is for your convenience.</p>
+            </div>
+
+            <h2>1. Acceptance of Terms</h2>
+            <p>By downloading, installing, or using Voice Calculator, you agree to be bound by these Terms of Use. If you do not agree, please do not use the application.</p>
+
+            <h2>2. Description of Service</h2>
+            <p>Voice Calculator is an iOS application that provides voice-powered calculation capabilities including:</p>
+            <ul>
+                <li>Continuous voice-to-calculation with real-time processing</li>
+                <li>Audio confirmation (read-back) of calculations</li>
+                <li>Tax calculation by voice command</li>
+                <li>Calculation history and audit trail</li>
+                <li>Export to CSV and plain text formats</li>
+                <li>Basic and scientific calculation modes</li>
+                <li>Light and dark themes</li>
+            </ul>
+
+            <h2>3. License to Use</h2>
+            <h3>Personal Use License</h3>
+            <p>We grant you a limited, non-exclusive, non-transferable license to use Voice Calculator for your personal purposes, subject to these Terms of Use.</p>
+            <h3>Restrictions</h3>
+            <p>You may not:</p>
+            <ul>
+                <li>Reverse engineer, decompile, or disassemble the application</li>
+                <li>Modify, adapt, or create derivative works based on Voice Calculator</li>
+                <li>Remove or alter any copyright, trademark, or proprietary notices</li>
+                <li>Use the application in any way that violates applicable laws or regulations</li>
+            </ul>
+
+            <h2>4. Subscriptions & In-App Purchases</h2>
+            <p>Voice Calculator may offer premium features through subscriptions or one-time purchases. All payments are processed through the Apple App Store and are subject to Apple's payment terms.</p>
+            <ul>
+                <li>Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period</li>
+                <li>You can manage or cancel subscriptions in your Apple ID account settings</li>
+                <li>Refunds are handled by Apple per their refund policy</li>
+            </ul>
+
+            <h2>5. Speech Recognition & Microphone</h2>
+            <p>Voice Calculator requires microphone and speech recognition permissions to function. Audio is processed by Apple's on-device or cloud-based speech recognition service. We do not record, store, or transmit your voice data to our own servers.</p>
+
+            <h2>6. Privacy & Data</h2>
+            <p>Your privacy matters to us. Please review our <a href="privacy.html">Privacy Policy</a> for full details. Key points:</p>
+            <ul>
+                <li>Calculation history and preferences are stored locally on your device</li>
+                <li>Voice data is processed by Apple and not stored by us</li>
+                <li>Anonymous analytics may be collected to improve app stability</li>
+            </ul>
+
+            <h2>7. Disclaimer of Warranties</h2>
+            <p>Voice Calculator is provided "as is" and "as available" without warranties of any kind. We do not warrant that:</p>
+            <ul>
+                <li>The application will meet your specific requirements</li>
+                <li>Speech recognition will be 100% accurate in all environments</li>
+                <li>The application will be uninterrupted or error-free</li>
+                <li>Calculation results will be suitable for financial or legal decisions</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>Important:</strong> Always verify critical calculations independently. Voice Calculator is a convenience tool and should not be relied upon for decisions requiring guaranteed precision.</p>
+            </div>
+
+            <h2>8. Limitation of Liability</h2>
+            <p>To the maximum extent permitted by law, HarmonyAstroApps shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of Voice Calculator, including but not limited to loss of data, financial loss, or business interruption.</p>
+
+            <h2>9. App Store Terms</h2>
+            <p>Your use of Voice Calculator is also subject to the Apple App Store Terms of Service. In case of conflict between these terms and the App Store terms, the App Store terms shall prevail.</p>
+
+            <h2>10. Updates & Changes</h2>
+            <p>We may release updates to Voice Calculator and may modify these Terms of Use at any time. Continued use of the application after changes constitutes acceptance of the updated terms.</p>
+
+            <h2>11. Termination</h2>
+            <p>These terms remain in effect until terminated. You may terminate by uninstalling the application. We may terminate your access if you violate these terms.</p>
+
+            <h2>12. Governing Law</h2>
+            <p>These Terms of Use shall be governed by and construed in accordance with applicable laws, without regard to conflict of law principles.</p>
+
+            <h2>13. Contact Information</h2>
+            <p>If you have questions about these Terms of Use, please contact us at <a href="mailto:support@harmonyastroapps.com">support@harmonyastroapps.com</a>.</p>
+
+            <h2>14. Acknowledgment</h2>
+            <p>By using Voice Calculator, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use and our <a href="privacy.html">Privacy Policy</a>.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 HarmonyAstroApps. All rights reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a> | <a href="support.html">Support</a> | <a href="mailto:support@harmonyastroapps.com">Contact</a></p>
+        </div>
+    </footer>
+</body>
+</html>

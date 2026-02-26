@@ -7,7 +7,9 @@
     <style>
         :root {
             --primary-color: #4F46E5;
+            --accent-color: #7C3AED;
             --text-color: #1F2937;
+            --text-muted: #6B7280;
             --background-color: #F3F4F6;
             --card-background: #FFFFFF;
         }
@@ -15,25 +17,71 @@
         @media (prefers-color-scheme: dark) {
             :root {
                 --primary-color: #7F77F1;
+                --accent-color: #A78BFA;
                 --text-color: #F9FAFB;
+                --text-muted: #9CA3AF;
                 --background-color: #0F1115;
                 --card-background: #1C1E24;
             }
         }
 
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: var(--background-color);
             color: var(--text-color);
             line-height: 1.6;
         }
 
+        header {
+            background-color: var(--card-background);
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
         .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .nav-links a:hover { color: var(--primary-color); }
+
+        main {
             max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
+        }
+
+        .card {
+            background-color: var(--card-background);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
 
         h1 {
@@ -45,72 +93,121 @@
         h2 {
             margin-top: 30px;
             font-size: 1.5rem;
-            border-bottom: 1px solid rgba(128, 128, 128, 0.2);
-            padding-bottom: 10px;
-        }
-
-        p {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 8px;
             margin-bottom: 15px;
         }
 
-        .card {
-            background-color: var(--card-background);
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
+        p { margin-bottom: 15px; }
 
         .last-updated {
             font-size: 0.9rem;
-            opacity: 0.7;
+            color: var(--text-muted);
             margin-bottom: 30px;
         }
 
-        a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
+        a { color: var(--primary-color); text-decoration: none; }
 
         .back-link {
             display: inline-block;
             margin-bottom: 20px;
             font-weight: 500;
         }
+
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        li { margin-bottom: 6px; }
+
+        footer {
+            background-color: var(--card-background);
+            padding: 40px 0;
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-color);
+            opacity: 0.7;
+        }
+
+        footer a { color: var(--primary-color); text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .card { padding: 24px; }
+            h1 { font-size: 2rem; }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <a href="index.html" class="back-link">← Back to Home</a>
-        
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Voice Calculator</a>
+                <div class="nav-links">
+                    <a href="index.html#features">Features</a>
+                    <a href="support.html">Support</a>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+
         <div class="card">
             <h1>Privacy Policy</h1>
-            <div class="last-updated">Last Updated: February 16, 2026</div>
+            <div class="last-updated">Last Updated: February 26, 2026</div>
 
             <p>At HarmonyAstroApps, we prioritize your privacy. This Privacy Policy explains how the Voice Calculator app collects, uses, and protects your information.</p>
 
             <h2>1. Speech Recognition Data</h2>
-            <p>Voice Calculator uses Apple's Speech Recognition technology to convert your spoken words into text for calculations. 
-            When you use the voice feature, audio data is sent to Apple's servers for processing. This data is used solely to provide the speech-to-text functionality and is subject to <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
+            <p>Voice Calculator uses Apple's Speech Recognition technology to convert your spoken words into text for calculations. When you use the voice feature, audio data is processed by Apple's on-device or cloud-based speech engine. This data is subject to <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
             <p>We do not store your voice recordings or transcripts on our own servers.</p>
 
             <h2>2. Data Collection & Usage</h2>
-            <p>We do not collect personal usage data that is linked to your identity. 
-            We may collect anonymous analytics data (such as app crashes, feature usage statistics, and device locale) to help us improve the app's performance and stability. 
-            This data is aggregated and does not identify you personally.</p>
+            <p>We do not collect personal usage data that is linked to your identity. We may collect anonymous analytics data (such as app crashes, feature usage statistics, and device locale) to help improve the app's performance and stability. This data is aggregated and does not identify you personally.</p>
+            <p>The following third-party services may be used for analytics and app improvement:</p>
+            <ul>
+                <li><strong>Firebase Analytics</strong> -- anonymous usage statistics</li>
+                <li><strong>Firebase Crashlytics</strong> -- crash reports for stability improvements</li>
+                <li><strong>RevenueCat</strong> -- subscription management (processes purchase data through Apple)</li>
+            </ul>
 
             <h2>3. Local Storage</h2>
-            <p>Your calculation history and settings (such as theme preferences and decimal places) are stored locally on your device. 
-            You can clear your history at any time within the app settings.</p>
+            <p>Your calculation history, settings (such as theme preferences, decimal places, and tax rate), and app preferences are stored locally on your device. This data never leaves your device. You can clear your history at any time within the app settings.</p>
 
-            <h2>4. Third-Party Services</h2>
-            <p>The app may use third-party services for analytics and performance monitoring. These services may collect information about your device and app usage patterns.</p>
+            <h2>4. Microphone & Permissions</h2>
+            <p>Voice Calculator requests the following permissions:</p>
+            <ul>
+                <li><strong>Microphone</strong> -- required for voice-based calculations</li>
+                <li><strong>Speech Recognition</strong> -- required to convert speech to text</li>
+                <li><strong>Siri</strong> -- optional, for launching the app via voice commands</li>
+            </ul>
+            <p>These permissions are used solely to provide the app's core voice functionality. You can revoke them at any time in your device's Settings.</p>
 
-            <h2>5. Changes to This Policy</h2>
-            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+            <h2>5. Subscriptions & Purchases</h2>
+            <p>If you purchase a subscription or make an in-app purchase, the transaction is processed entirely by Apple through the App Store. We do not have access to your payment information. RevenueCat is used to manage subscription status and does not collect personally identifiable information.</p>
 
-            <h2>6. Contact Us</h2>
+            <h2>6. Children's Privacy</h2>
+            <p>Voice Calculator does not knowingly collect personal information from children under 13. The app does not require any personal information to function.</p>
+
+            <h2>7. Changes to This Policy</h2>
+            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+
+            <h2>8. Contact Us</h2>
             <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:support@harmonyastroapps.com">support@harmonyastroapps.com</a>.</p>
         </div>
-    </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 HarmonyAstroApps. All rights reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a> | <a href="support.html">Support</a> | <a href="mailto:support@harmonyastroapps.com">Contact</a></p>
+        </div>
+    </footer>
 </body>
 </html>

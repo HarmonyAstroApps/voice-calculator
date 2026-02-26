@@ -12,22 +12,25 @@
             --background-color: #F3F4F6;
             --card-background: #FFFFFF;
             --text-color: #1F2937;
+            --text-muted: #6B7280;
         }
 
         @media (prefers-color-scheme: dark) {
             :root {
                 --primary-color: #7F77F1;
                 --secondary-color: #F3F4F6;
+                --accent-color: #A78BFA;
                 --background-color: #0F1115;
                 --card-background: #1C1E24;
                 --text-color: #F9FAFB;
+                --text-muted: #9CA3AF;
             }
         }
 
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: var(--background-color);
             color: var(--text-color);
             line-height: 1.6;
@@ -68,6 +71,8 @@
             font-weight: 500;
         }
 
+        .nav-links a:hover { color: var(--primary-color); }
+
         .hero {
             text-align: center;
             padding: 80px 20px;
@@ -93,10 +98,11 @@
             display: inline-block;
             background-color: var(--primary-color);
             color: white;
-            padding: 12px 30px;
+            padding: 14px 36px;
             border-radius: 25px;
             text-decoration: none;
             font-weight: 600;
+            font-size: 1.05rem;
             transition: transform 0.2s, box-shadow 0.2s;
         }
 
@@ -107,8 +113,8 @@
 
         .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
             padding: 60px 0;
         }
 
@@ -120,20 +126,120 @@
             transition: transform 0.2s;
         }
 
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
+        .feature-card:hover { transform: translateY(-5px); }
 
         .feature-icon {
             font-size: 2rem;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
             color: var(--primary-color);
         }
 
         .feature-title {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Screenshots */
+        .screenshots-section {
+            padding: 60px 0 40px;
+        }
+
+        .screenshots-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .screenshots-section .subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        .screenshots-scroll {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 10px 0 30px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+        }
+
+        .screenshots-scroll::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .screenshots-scroll::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .screenshots-scroll::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 3px;
+            opacity: 0.5;
+        }
+
+        .screenshot-item {
+            flex: 0 0 auto;
+            scroll-snap-align: center;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            transition: transform 0.3s;
+        }
+
+        .screenshot-item:hover { transform: scale(1.02); }
+
+        .screenshot-item img {
+            height: 480px;
+            width: auto;
+            display: block;
+        }
+
+        /* Privacy inline */
+        .privacy-section {
+            padding: 60px 0;
+        }
+
+        .privacy-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .privacy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .privacy-card {
+            background-color: var(--card-background);
+            padding: 28px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .privacy-card h3 {
+            font-size: 1.1rem;
             margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .privacy-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
         }
 
         footer {
@@ -146,9 +252,13 @@
             opacity: 0.7;
         }
 
-        footer a {
-            color: var(--primary-color);
-            text-decoration: none;
+        footer a { color: var(--primary-color); text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero { padding: 50px 20px; }
+            .screenshot-item img { height: 360px; }
         }
     </style>
 </head>
@@ -159,7 +269,10 @@
                 <a href="#" class="logo">Voice Calculator</a>
                 <div class="nav-links">
                     <a href="#features">Features</a>
-                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="#screenshots">Screenshots</a>
+                    <a href="support.html">Support</a>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
                 </div>
             </nav>
         </div>
@@ -176,32 +289,91 @@
     <section id="features" class="container">
         <div class="features">
             <div class="feature-card">
-                <div class="feature-icon">🎤</div>
+                <div class="feature-icon">&#x1F3A4;</div>
                 <div class="feature-title">Continuous Listening</div>
                 <p>Speak calculations naturally without pausing. The app listens continuously and processes your math in real-time.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">✅</div>
+                <div class="feature-icon">&#x2705;</div>
                 <div class="feature-title">Kakunin (Confirmation)</div>
                 <p>Verify your calculations easily. The app reads back your entries to ensure accuracy before you proceed.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">📤</div>
+                <div class="feature-icon">&#x1F4B0;</div>
+                <div class="feature-title">Voice Tax</div>
+                <p>Say "plus tax" to instantly add your configured tax rate. Works with any operation -- perfect for shopping and invoices.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#x1F4CB;</div>
+                <div class="feature-title">Full Audit Trail</div>
+                <p>Every calculation is saved with timestamps. Review your complete history and pick up right where you left off.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#x1F4E4;</div>
                 <div class="feature-title">Export Anywhere</div>
                 <p>Share your calculations instantly. Export to CSV for spreadsheets or plain text for notes and messages.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🌗</div>
-                <div class="feature-title">Beautiful Themes</div>
-                <p>Designed for your eyes. Switch between soothing Light and Dark modes with high-contrast visibility.</p>
+                <div class="feature-icon">&#x1F399;&#xFE0F;</div>
+                <div class="feature-title">Voice Commands</div>
+                <p>Clear, delete, undo, equals -- all by voice. Full command support so you never need to touch the screen.</p>
             </div>
         </div>
+    </section>
+
+    <section id="screenshots" class="container screenshots-section">
+        <h2>See it in Action</h2>
+        <p class="subtitle">Swipe through to explore Voice Calculator's features</p>
+        <div class="screenshots-scroll">
+            <div class="screenshot-item">
+                <img src="screenshots/1_Plan.jpg" alt="Calculate 10x faster, hands-free" loading="lazy">
+            </div>
+            <div class="screenshot-item">
+                <img src="screenshots/2_Plan.jpg" alt="Hear your full calculation read back" loading="lazy">
+            </div>
+            <div class="screenshot-item">
+                <img src="screenshots/3_plan.jpg" alt="Add tax by voice" loading="lazy">
+            </div>
+            <div class="screenshot-item">
+                <img src="screenshots/4_plan.jpg" alt="Export to Excel and plain text" loading="lazy">
+            </div>
+            <div class="screenshot-item">
+                <img src="screenshots/5_plan.jpg" alt="Your entire audit trail" loading="lazy">
+            </div>
+            <div class="screenshot-item">
+                <img src="screenshots/7_plan.jpg" alt="Copy results instantly" loading="lazy">
+            </div>
+            <div class="screenshot-item">
+                <img src="screenshots/11_plan.jpg" alt="Voice commands reference" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section id="privacy" class="container privacy-section">
+        <h2>Your Privacy Matters</h2>
+        <div class="privacy-grid">
+            <div class="privacy-card">
+                <h3>&#x1F50A; Voice Data</h3>
+                <p>Voice audio is processed by Apple's Speech Recognition on-device or via Apple's servers. We never store your voice recordings or transcripts.</p>
+            </div>
+            <div class="privacy-card">
+                <h3>&#x1F4F1; Local Storage</h3>
+                <p>Your calculation history, settings, and preferences are stored locally on your device. You can clear them anytime.</p>
+            </div>
+            <div class="privacy-card">
+                <h3>&#x1F512; No Personal Data</h3>
+                <p>We do not collect personal data linked to your identity. Only anonymous crash and usage analytics help us improve the app.</p>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 24px;">
+            <a href="privacy.html" style="font-weight: 600;">Read Full Privacy Policy &rarr;</a>
+        </p>
     </section>
 
     <footer>
         <div class="container">
             <p>&copy; 2026 HarmonyAstroApps. All rights reserved.</p>
-            <p><a href="privacy.html">Privacy Policy</a> | <a href="mailto:support@harmonyastroapps.com">Contact Support</a></p>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a> | <a href="support.html">Support</a> | <a href="mailto:support@harmonyastroapps.com">Contact</a></p>
         </div>
     </footer>
 </body>
