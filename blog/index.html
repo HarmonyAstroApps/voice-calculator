@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Calculator Blog - Tips, Guides & Stories | HarmonyAstroApps</title>
+    <meta name="description" content="Practical guides, tips, and stories about hands-free math on iOS. Learn how to use Voice Calculator for cooking, shopping, taxes, and everyday calculations.">
+    <meta name="keywords" content="voice calculator blog, hands-free math tips, iOS calculator guides, voice calculator tutorials">
+    <meta name="author" content="HarmonyAstroApps">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://harmonyastroapps.github.io/voice-calculator/blog/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Voice Calculator">
+    <meta property="og:title" content="Voice Calculator Blog - Tips, Guides & Stories">
+    <meta property="og:description" content="Practical guides and tips for hands-free math on iOS.">
+    <meta property="og:url" content="https://harmonyastroapps.github.io/voice-calculator/blog/">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Voice Calculator Blog",
+      "description": "Practical guides, tips, and stories about hands-free math on iOS.",
+      "url": "https://harmonyastroapps.github.io/voice-calculator/blog/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "HarmonyAstroApps",
+        "url": "https://harmonyastroapps.github.io/"
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-color: #4F46E5;
+            --accent-color: #7C3AED;
+            --background-color: #F3F4F6;
+            --card-background: #FFFFFF;
+            --text-color: #1F2937;
+            --text-muted: #6B7280;
+            --border-color: rgba(128, 128, 128, 0.15);
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-color: #7F77F1;
+                --accent-color: #A78BFA;
+                --background-color: #0F1115;
+                --card-background: #1C1E24;
+                --text-color: #F9FAFB;
+                --text-muted: #9CA3AF;
+                --border-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--card-background);
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary-color); text-decoration: none; }
+        .nav-links a { margin-left: 20px; text-decoration: none; color: var(--text-color); font-weight: 500; }
+        .nav-links a:hover { color: var(--primary-color); }
+        main { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        a { color: var(--primary-color); text-decoration: none; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-weight: 500; }
+        .page-title { font-size: 2.5rem; color: var(--primary-color); margin-bottom: 8px; }
+        .page-subtitle { font-size: 1.15rem; color: var(--text-muted); margin-bottom: 40px; }
+        .post-list { display: grid; gap: 20px; }
+        .post-card {
+            background-color: var(--card-background);
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--primary-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .post-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(79, 70, 229, 0.12);
+        }
+        .post-meta {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .post-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+        .post-excerpt { color: var(--text-muted); font-size: 0.98rem; }
+        .read-more {
+            display: inline-block;
+            margin-top: 12px;
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        footer {
+            background-color: var(--card-background);
+            padding: 40px 0;
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-color);
+            opacity: 0.7;
+        }
+        footer a { color: var(--primary-color); text-decoration: none; }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .page-title { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">Voice Calculator</a>
+                <div class="nav-links">
+                    <a href="../index.html#features">Features</a>
+                    <a href="index.html">Blog</a>
+                    <a href="../support.html">Support</a>
+                    <a href="../privacy.html">Privacy</a>
+                    <a href="../terms.html">Terms</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <a href="../index.html" class="back-link">&larr; Back to Home</a>
+        <h1 class="page-title">The Voice Calculator Blog</h1>
+        <p class="page-subtitle">Honest guides for doing math without touching your phone. Cooking, shopping, taxes, and everything in between.</p>
+
+        <div class="post-list">
+            <a href="how-to-calculate-tax-by-voice.html" class="post-card">
+                <div class="post-meta">Guide &middot; 4 min read</div>
+                <h2 class="post-title">How to Calculate Tax by Voice on iPhone (Without Touching a Button)</h2>
+                <p class="post-excerpt">Adding tax to a total while your hands are covered in flour, or you're holding a shopping cart, is surprisingly easy when you can just say "plus tax". Here's how it works and why it saves real time.</p>
+                <span class="read-more">Read more &rarr;</span>
+            </a>
+
+            <a href="hands-free-calculator-for-cooking.html" class="post-card">
+                <div class="post-meta">Use Case &middot; 3 min read</div>
+                <h2 class="post-title">The Best Hands-Free Calculator for Cooking (It's a Voice Calculator)</h2>
+                <p class="post-excerpt">If you've ever tried to double a recipe with wet hands, you know how painful tapping a screen is. A voice calculator solves this. Here's how cooks, bakers, and meal-preppers actually use one.</p>
+                <span class="read-more">Read more &rarr;</span>
+            </a>
+
+            <a href="voice-calculator-vs-typing.html" class="post-card">
+                <div class="post-meta">Comparison &middot; 4 min read</div>
+                <h2 class="post-title">Voice vs Typing: Which Is Faster for iPhone Calculations?</h2>
+                <p class="post-excerpt">We tested 20 real calculations head-to-head. Voice wins in 17 of them &mdash; and the 3 it loses are very specific. Here are the numbers and when each input method actually makes sense.</p>
+                <span class="read-more">Read more &rarr;</span>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 HarmonyAstroApps. All rights reserved.</p>
+            <p><a href="../privacy.html">Privacy Policy</a> | <a href="../terms.html">Terms of Use</a> | <a href="../support.html">Support</a> | <a href="../about.html">About</a> | <a href="../faq.html">FAQ</a> | <a href="mailto:harmonyastroapp@gmail.com">Contact</a></p>
+        </div>
+    </footer>
+</body>
+</html>
