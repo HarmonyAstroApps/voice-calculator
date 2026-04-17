@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/0.9">
+  <url>
+    <loc>https://harmonyastroapps.github.io/voice-calculator/</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://harmonyastroapps.github.io/voice-calculator/screenshots/1_Plan.jpg</image:loc>
+      <image:title>Voice Calculator - Calculate 10x faster, hands-free</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://harmonyastroapps.github.io/voice-calculator/screenshots/2_Plan.jpg</image:loc>
+      <image:title>Voice Calculator - Hear your full calculation read back</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://harmonyastroapps.github.io/voice-calculator/screenshots/3_plan.jpg</image:loc>
+      <image:title>Voice Calculator - Add tax by voice</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://harmonyastroapps.github.io/voice-calculator/screenshots/4_plan.jpg</image:loc>
+      <image:title>Voice Calculator - Export to Excel and plain text</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://harmonyastroapps.github.io/voice-calculator/screenshots/5_plan.jpg</image:loc>
+      <image:title>Voice Calculator - Your entire audit trail</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://harmonyastroapps.github.io/voice-calculator/screenshots/7_plan.jpg</image:loc>
+      <image:title>Voice Calculator - Copy results instantly</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://harmonyastroapps.github.io/voice-calculator/screenshots/11_plan.jpg</image:loc>
+      <image:title>Voice Calculator - Voice commands reference</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://harmonyastroapps.github.io/voice-calculator/support.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://harmonyastroapps.github.io/voice-calculator/privacy.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://harmonyastroapps.github.io/voice-calculator/terms.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

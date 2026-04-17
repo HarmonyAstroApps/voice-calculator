@@ -1,0 +1,7 @@
+# robots.txt for Voice Calculator
+# All search engines and AI crawlers are welcome
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://harmonyastroapps.github.io/voice-calculator/sitemap.xml
