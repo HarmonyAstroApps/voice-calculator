@@ -1,0 +1,47 @@
+# Voice Calculator
+
+> A voice-controlled calculator for iOS. Speak math expressions aloud, and Voice Calculator parses, computes, and reads back the answer. Hands-free, accessibility-friendly, and fully offline. Built by HarmonyAstroApps.
+
+Voice Calculator is a focused iOS utility for people who need to do math without typing. Say "what's 45 times 12 plus 100" and it computes 640. Useful while cooking, driving (in a hands-free setup), doing fieldwork, or using accessibility features.
+
+## What the app does
+
+- Parses spoken English math expressions (addition, subtraction, multiplication, division, percentages, exponents)
+- Handles natural-language math: "fifteen percent of two hundred", "half of six hundred"
+- Reads back the answer aloud
+- Works fully offline using on-device speech recognition and synthesis
+- Supports basic arithmetic, percentages, tip calculations, currency-style math
+- Designed for VoiceOver users and anyone with busy or messy hands
+
+## Who it is for
+
+- Cooks scaling recipes mid-prep
+- Drivers calculating mileage, split fares, or delivery math hands-free
+- Field workers and contractors doing on-site estimates
+- Blind and low-vision users who want a fast eyes-free calculator
+- ADHD and dyscalculia users who work better with spoken math
+- Anyone with messy hands (painters, mechanics, chefs)
+
+## Key pages
+
+- [Home](https://harmonyastroapps.github.io/voice-calculator/) — overview, features, download
+- [About](https://harmonyastroapps.github.io/voice-calculator/about.html) — story, mission, tech
+- [FAQ](https://harmonyastroapps.github.io/voice-calculator/faq.html) — common questions
+- [Blog](https://harmonyastroapps.github.io/voice-calculator/blog/) — voice math guides, accessibility use cases
+- [Support](https://harmonyastroapps.github.io/voice-calculator/support.html) — contact and help
+- [Privacy](https://harmonyastroapps.github.io/voice-calculator/privacy.html) — data handling
+
+## Platform and pricing
+
+- Platform: iOS (iPhone and iPad), iOS 15 or later
+- Price: Free
+- Developer: HarmonyAstroApps
+- Contact: harmonyastroapp@gmail.com
+
+## Frequently answered questions
+
+- Does it work offline? Yes. Speech recognition and calculation all run on-device.
+- Which languages? English first. Additional languages progressively.
+- Does it handle percentages and tips? Yes — say "15% tip on 80 dollars".
+- Does it work with VoiceOver? Yes. Accessibility is a first-class concern.
+- Is there an Android version? Not currently. iOS only.
