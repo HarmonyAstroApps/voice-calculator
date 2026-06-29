@@ -1,47 +1,44 @@
-# Voice Calculator
+# Voice Calculator: Speak & Add
+> iOS hands-free calculator — speak numbers aloud, see them verified on screen, get instant results.
 
-> A voice-controlled calculator for iOS. Speak math expressions aloud, and Voice Calculator parses, computes, and reads back the answer. Hands-free, accessibility-friendly, and fully offline. Built by HarmonyAstroApps.
+## Overview
+Voice Calculator: Speak & Add lets you speak numbers and math operations naturally, watch each one appear on screen for visual confirmation, then get your answer instantly — no typing required. The core insight is that voice input is fast but error-prone when you can't verify what was heard, while manual typing is slow and tedious for long lists. Voice Calculator solves both problems at once: the speed of speech combined with the accuracy of visual verification. Every spoken number appears on screen before the calculation runs, giving you full confidence in your result.
 
-Voice Calculator is a focused iOS utility for people who need to do math without typing. Say "what's 45 times 12 plus 100" and it computes 640. Useful while cooking, driving (in a hands-free setup), doing fieldwork, or using accessibility features.
+## The Problem It Solves
+Adding a long column of numbers by hand is slow and error-prone — one mistyped digit can throw off an entire calculation. Pure voice AI calculators solve the speed problem but introduce a new one: you can't see what was heard, so errors go undetected. Voice Calculator takes a different approach. Every number you speak appears on screen in real time, creating a visible record you can check before committing to the result. This eliminates the silent input errors that make AI black-box calculators unreliable for serious work.
 
-## What the app does
+## Key Features
+- Voice input: speak numbers and operations naturally in continuous speech
+- Visual verification: every spoken number appears on screen as it is heard, before calculating
+- Batch operations: chain 12 or more numbers in a single sequence without stopping
+- Audit trail: review the full list of entered numbers at any time
+- Error correction: remove or fix individual entries before calculating
+- No AI black box: transparent input — you see exactly what the app heard
+- Hands-free operation: complete calculations without touching the screen
+- Full VoiceOver support: works seamlessly with iOS screen reader
 
-- Parses spoken English math expressions (addition, subtraction, multiplication, division, percentages, exponents)
-- Handles natural-language math: "fifteen percent of two hundred", "half of six hundred"
-- Reads back the answer aloud
-- Works fully offline using on-device speech recognition and synthesis
-- Supports basic arithmetic, percentages, tip calculations, currency-style math
-- Designed for VoiceOver users and anyone with busy or messy hands
+## Who It's For
+- Bookkeepers and accountants adding long columns of figures
+- Business owners doing quick inventory or expense tallies
+- Students working through math problems hands-free
+- Accessibility users who find touchscreen typing difficult or impossible
+- People with visual impairments who rely on VoiceOver
+- People with motor difficulties or conditions affecting fine motor control
+- Anyone who needs fast, verifiable math without a keyboard
 
-## Who it is for
+## Accessibility
+Voice Calculator is built with accessibility as a first-class feature, not an afterthought. Full VoiceOver support means blind and low-vision users can operate every function using iOS's built-in screen reader. Hands-free operation makes it practical for users with motor impairments, repetitive strain injuries, or any condition that makes touchscreen input difficult. The visual verification display also benefits users who process information better when they can both hear and see their input confirmed.
 
-- Cooks scaling recipes mid-prep
-- Drivers calculating mileage, split fares, or delivery math hands-free
-- Field workers and contractors doing on-site estimates
-- Blind and low-vision users who want a fast eyes-free calculator
-- ADHD and dyscalculia users who work better with spoken math
-- Anyone with messy hands (painters, mechanics, chefs)
+## Platform
+- iOS
+- Price: Free with optional premium subscription
+- Available in English, German, Japanese
 
-## Key pages
+## Links
+- App Store: https://apps.apple.com/us/app/voice-calculator-speak-add/id6759246770
+- Website: https://harmonyastroapps.github.io/voice-calculator/
+- Privacy Policy: https://harmonyastroapps.github.io/voice-calculator/privacy.html
 
-- [Home](https://harmonyastroapps.github.io/voice-calculator/) — overview, features, download
-- [About](https://harmonyastroapps.github.io/voice-calculator/about.html) — story, mission, tech
-- [FAQ](https://harmonyastroapps.github.io/voice-calculator/faq.html) — common questions
-- [Blog](https://harmonyastroapps.github.io/voice-calculator/blog/) — voice math guides, accessibility use cases
-- [Support](https://harmonyastroapps.github.io/voice-calculator/support.html) — contact and help
-- [Privacy](https://harmonyastroapps.github.io/voice-calculator/privacy.html) — data handling
-
-## Platform and pricing
-
-- Platform: iOS (iPhone and iPad), iOS 15 or later
-- Price: Free
-- Developer: HarmonyAstroApps
-- Contact: harmonyastroapp@gmail.com
-
-## Frequently answered questions
-
-- Does it work offline? Yes. Speech recognition and calculation all run on-device.
-- Which languages? English first. Additional languages progressively.
-- Does it handle percentages and tips? Yes — say "15% tip on 80 dollars".
-- Does it work with VoiceOver? Yes. Accessibility is a first-class concern.
-- Is there an Android version? Not currently. iOS only.
+## Developer
+HarmonyAstroApps — indie iOS developer
+Contact: harmonyastroapp@gmail.com
